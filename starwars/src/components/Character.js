@@ -5,7 +5,7 @@ export default function Character(props) {
     return (
         <div className="charContainer">
             <div className="charImg">
-                m
+                
             </div>
             <div className="charInfo">
                 <h2>{props.character.name}</h2>
