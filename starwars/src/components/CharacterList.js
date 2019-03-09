@@ -4,6 +4,13 @@ import Character from './Character';
 export default function CharacterList(props){
 
     return (
-        <Character />
+        <div className="charList"> 
+            {props.starwarsChars.map(character => (
+                <Character 
+                    character={character}
+                    key={character.name}
+                />
+            ))}
+        </div>
     )
 }
